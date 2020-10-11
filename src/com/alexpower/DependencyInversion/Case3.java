@@ -1,5 +1,12 @@
 package com.alexpower.DependencyInversion;
 
+/*
+* 3 ways to apply Dependency Inversion:
+*  A: interface
+*  B: Constructor
+*  C: setter()
+*
+* */
 public class Case3 {
     public static void main(String[] args) {
         // method 1
@@ -16,7 +23,7 @@ public class Case3 {
         openAndClose.open();
     }
 };
-
+// ---------------------------------------------------------------------------------------
 // method 1: 通过接口实现依赖
 /*interface IOpenAndClose {
     public void open(ITV tv);
@@ -41,6 +48,8 @@ class OpenAndClose implements IOpenAndClose{
         tv.play();
     }
 }*/
+
+// ---------------------------------------------------------------------------------------
 
 // method 2: 通过构造器实现依赖
 /*interface IOpenAndClose {
@@ -72,6 +81,8 @@ class OpenAndClose implements IOpenAndClose{
         this.tv.play();
     }
 }*/
+
+// ---------------------------------------------------------------------------------------
 
 // method 3: 通过 Set() 进行依赖传递
 interface IOpenAndClose {
