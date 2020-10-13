@@ -1,11 +1,14 @@
-package com.alexpower.singleton;
+package com.alexpower.singleton.hungryman.type1;
 
 /*
+ * 饿汉式： 线程安全，但耗费内存
+ *
+ *  饿汉式： 静态变量
  * load the instance at very beginning, will cost memory unnecessarily
  * thread safe
  *
  * */
-public class HungryManPattern {
+public class SingleTon {
 
     public static void main(String[] args) {
         Dog dog1 = Dog.getInstance();
@@ -16,13 +19,9 @@ public class HungryManPattern {
 }
 
 class Dog{
+    private static Dog dog = new Dog();
 
-    public String name;
-
-    private Dog() {
-    }
-
-   private static Dog dog = new Dog();
+    private Dog() {}
 
     public static Dog getInstance (){
         return dog;
