@@ -1,7 +1,7 @@
 package com.alexpower.headFirst_practice;
 
 /*
-* practice from Head First p232: Chapter 8: polymorphism
+* practice from Head First JAVA p232: Chapter 8: polymorphism
 *
 * */
 public class Demo extends Clowns{
