@@ -1,23 +1,45 @@
 package com.alexpower.factory.factorymethod;
 
-public abstract class Pizza {
-    String name;
+import java.util.ArrayList;
 
-    public void setName(String name) {
-        this.name = name;
+public abstract class Pizza {
+    public String name;
+    public String dough;
+    public String sauce;
+    public ArrayList toppings = new ArrayList<>();
+
+    public void prepare() {
+        System.out.println("preparing " + name + " ...");
+        System.out.println("adding dough and sauce...");
+        System.out.println("adding toppings:");
+        for (int i = 0; i < toppings.size(); i++) {
+        System.out.println(toppings.get(i));
+        }
     }
 
-    public abstract void prepare();
-
     public void cook() {
-        System.out.println(name + " is being cooked");
+        System.out.println("bake for 25 mins at 200 Celsius degree");
     }
 
     public void cut() {
-        System.out.println(name + " is being cut");
+        System.out.println("Cutting the pizza into diagonal slices");
     }
 
-    public void pack() {
-        System.out.println(name + " is being packaged");
+    public void box() {
+        System.out.println("Place pizza in official PizzaStore box");
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Pizza{" +
+                "name='" + name + '\'' +
+                ", dough='" + dough + '\'' +
+                ", sauce='" + sauce + '\'' +
+                ", toppings=" + toppings +
+                '}';
     }
 }
