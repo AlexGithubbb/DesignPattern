@@ -1,4 +1,4 @@
-package com.alexpower.designPatternPrinciple.singleton.lazyman.type2;
+package com.alexpower.singleton.lazyman.type2;
 
 /*
 * 懒汉式： 线程安全

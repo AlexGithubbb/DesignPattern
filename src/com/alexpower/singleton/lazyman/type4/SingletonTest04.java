@@ -1,4 +1,4 @@
-package com.alexpower.designPatternPrinciple.singleton.lazyman.type4;
+package com.alexpower.singleton.lazyman.type4;
 
 /*
  * 静态内部类： 线程安全

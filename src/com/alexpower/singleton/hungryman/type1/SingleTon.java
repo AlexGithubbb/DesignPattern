@@ -1,4 +1,4 @@
-package com.alexpower.designPatternPrinciple.singleton.hungryman.type1;
+package com.alexpower.singleton.hungryman.type1;
 
 /*
  * 饿汉式： 线程安全，但耗费内存

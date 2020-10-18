@@ -1,4 +1,4 @@
-package com.alexpower.designPatternPrinciple.singleton.hungryman.type2;
+package com.alexpower.singleton.hungryman.type2;
 
 /*
 *  饿汉式：  静态代码块

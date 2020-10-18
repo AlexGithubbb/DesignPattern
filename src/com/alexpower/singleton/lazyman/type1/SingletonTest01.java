@@ -1,4 +1,4 @@
-package com.alexpower.designPatternPrinciple.singleton.lazyman.type1;
+package com.alexpower.singleton.lazyman.type1;
 
 /*
 * 懒汉式： 线程不安全 （可以实现线程安全），但节省内存空间

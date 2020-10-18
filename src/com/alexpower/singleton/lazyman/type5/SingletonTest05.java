@@ -1,4 +1,4 @@
-package com.alexpower.designPatternPrinciple.singleton.lazyman.type5;
+package com.alexpower.singleton.lazyman.type5;
 
 /*
  * 枚举类： 实现单例
